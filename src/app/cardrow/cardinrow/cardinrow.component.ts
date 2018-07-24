@@ -22,6 +22,6 @@ export class CardInRowComponent implements OnInit {
   }
 
   private draftCard() {
-    console.log("Drafting card ", this.card.getCard().getName());
+    console.log("Drafting card: ", this.card.getCard().getName());
   }
 }
