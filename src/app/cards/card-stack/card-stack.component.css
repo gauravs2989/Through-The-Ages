@@ -1,0 +1,47 @@
+.stack {
+    width: 100px;
+    height: 100%;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.cardInStack {
+    height: 160px;
+    width: 100%;
+    position: absolute;
+}
+
+.cardHolder {
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+.buttonPanel {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    margin-left: 2px;
+}
+
+.level3 {
+	bottom: 180px;
+    z-index: 4;
+}
+
+.level2 {
+	bottom: 120px;
+	z-index: 3;
+}
+
+.level1 {
+	bottom: 60px;
+	z-index: 2;
+}
+
+.level0 {
+	bottom: 0%;
+	z-index: 1;
+}

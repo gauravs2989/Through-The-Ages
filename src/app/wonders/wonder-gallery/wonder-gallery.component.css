@@ -1,0 +1,27 @@
+.navigation {
+    position: relative;
+    display: inline-block;
+}
+
+.wonderContainer {
+    text-align: center;
+}
+
+
+.wonderContainer .cardContainer {
+    height: 140px;
+    width: 100px;
+    position: relative;
+    margin: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+:host-context(.wonderContainer) {
+    display: inline-block;
+}
+
+.btn {
+    padding: 2px 4px;
+    background: #b3b3ff;
+}

@@ -1,0 +1,8 @@
+<div class="cardRow">
+    <div class="cardInRowContainer" *ngFor="let card of getCardsOnRow()">
+      <cardinrow [card]="card"></cardinrow>
+    </div>
+</div>
+<div>
+    <button (click)="fillRow()">REFILL</button>
+</div>

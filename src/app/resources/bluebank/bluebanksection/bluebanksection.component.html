@@ -1,0 +1,12 @@
+<div class="blueBankSection">
+  <div class="tokenContainer" *ngFor="let bracket of section.getBrackets(); first as isFirstContainer">
+    <div class="token" [ngClass]="
+      {
+        'corruptionMarker': isFirstContainer,
+        'resource': token.isFilled(),
+        'emptySlot': !token.isFilled()
+      }" *ngFor="let token of bracket.getTokens()">
+        <span class="corruption" *ngIf="isFirstContainer && !token.isFilled()">{{ section.getCorruption() }}</span>
+    </div>
+  </div>
+</div>

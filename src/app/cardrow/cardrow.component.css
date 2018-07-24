@@ -1,0 +1,35 @@
+.cardRow {
+    width: 100%;
+    height: 20%;
+    display: table;
+    table-layout: fixed;
+}
+
+.cardRow .cardInRowContainer {
+    display: table-cell;
+    padding: 5px;
+    text-align: center;
+    box-shadow: inset 0 0 5px #4d3900;
+}
+
+.cardRow .cardInRowContainer:nth-child(1),
+.cardRow .cardInRowContainer:nth-child(2),
+.cardRow .cardInRowContainer:nth-child(3),
+.cardRow .cardInRowContainer:nth-child(4),
+.cardRow .cardInRowContainer:nth-child(5) {
+    background: #adad85;
+}
+
+.cardRow .cardInRowContainer:nth-child(6),
+.cardRow .cardInRowContainer:nth-child(7),
+.cardRow .cardInRowContainer:nth-child(8),
+.cardRow .cardInRowContainer:nth-child(9) {
+    background: #8a8a5c;
+}
+
+.cardRow .cardInRowContainer:nth-child(10),
+.cardRow .cardInRowContainer:nth-child(11),
+.cardRow .cardInRowContainer:nth-child(12),
+.cardRow .cardInRowContainer:nth-child(13) {
+    background: #5c5c3d;
+}

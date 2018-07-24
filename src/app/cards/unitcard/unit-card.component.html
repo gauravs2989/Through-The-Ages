@@ -1,0 +1,17 @@
+<div class="cardContainer">
+    <card [card]="card"></card>
+</div>
+<div class="tokenContainer">
+    <div class="token population" *ngFor="let token of getYellowCubes()"></div>
+  </div>
+  <div class="resourceContainer" *ngIf="getBlueCubes().length > 0">
+      <div class="token resource" *ngFor="let resource of getBlueCubes()"></div>
+  </div>
+<div class="buttonPanel" *ngIf="isActionAvailable()">
+    <button (click)="buildUnit()" [title]="'Build '+ card.name" *ngIf="canBuild()" class="btn">+</button>
+    <button (click)="destroyUnit()" [title]="'Disband '+ card.name" *ngIf="hasUnits()" class="btn">-</button>
+    <button mat-button [matMenuTriggerFor]="menu" *ngIf="canUpgrade()" class="btn">U</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let upgrade of getAvailableUpgrades()" (click)="upgradeUnit(upgrade)">{{ upgrade.name }}</button>
+    </mat-menu>
+</div>

@@ -1,0 +1,19 @@
+<div class="yellowBankSection">
+  <div class="populationBracket" *ngFor="let bracket of section.getBrackets(); first as isFirstBracket">
+    <div class="happinessContainer">
+      <div class="happiness" *ngIf="!bracket.isHappinessMarkerHere">{{ bracket.happiness }}</div>
+      <div class="happinessMarker" *ngIf="bracket.isHappinessMarkerHere"></div>
+    </div>
+    <div class="tokenContainer">
+      <div class="token" [ngClass]= "{
+        'population': t.isFilled(),
+        'emptySlot': !t.isFilled()
+      }" *ngFor="let t of bracket.getTokens(); first as isFirstToken">
+        <span class="foodConsumption" *ngIf="isFirstBracket && isFirstToken && !t.isFilled()">{{ section.foodConsumption }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="foodCostContainer">
+    <span class="foodCost">{{ section.foodCost }}</span>
+  </div>
+</div>

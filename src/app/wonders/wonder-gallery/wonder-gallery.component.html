@@ -1,0 +1,14 @@
+<div class="completedWonders">
+  <div class="wonderContainer">
+    <div class="navigation" *ngIf="getCompletedWonders().length > 1">
+        <button class="btn" (click)="getPreviousWonder()" title="View Previous Wonder"> << </button>
+    </div>
+    <div class="cardContainer">
+      <card [card]="wonderToDisplay"></card>
+    </div>
+    <div class="navigation" *ngIf="getCompletedWonders().length > 1">
+        <button class="btn" (click)="getNextWonder()" title="View Next Wonder"> >> </button>
+    </div>
+  </div>
+</div>
+

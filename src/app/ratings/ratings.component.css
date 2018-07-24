@@ -1,0 +1,53 @@
+.ratings {
+    display: inline-block;
+    width: 50%;
+}
+
+.track {
+    height: 20px;
+    font-size: 1.1em;
+    margin: 2px 0 2px 15px;
+}
+
+.icon {
+    height: 20px; 
+    width: 20px;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+.rating,
+.score {
+    height: 100%;
+    position: relative;
+    top: -5px;
+}
+
+.militaryResource {
+    color: maroon;
+}
+
+.cultureIcon {
+    background-image: url(../common/images/culture-icon.png);
+}
+
+.scienceIcon {
+    background-image: url(../common/images/science-icon.png);
+}
+
+.strengthIcon {
+    background-image: url(../common/images/strength-icon.png);
+}
+
+.colonizationIcon {
+    background-image: url(../common/images/colonization-icon.png);
+}
+
+.foodIcon {
+    background-image: url(../common/images/food-icon.png);
+}
+
+.resourceIcon {
+    background-image: url(../common/images/resource-icon.png);
+}
+

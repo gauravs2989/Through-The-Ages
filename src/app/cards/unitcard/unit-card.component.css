@@ -1,0 +1,49 @@
+.tokenContainer {
+    z-index: 5;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    bottom: 45px;
+}
+
+.token {
+    float: right;
+    margin-left: 1px;
+}
+
+.cardContainer {
+    border-radius: 5px;
+    height: 140px;
+    width: 100px;
+    position: relative;
+}
+
+.resourceContainer {
+    z-index: 5;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    bottom: 20px;
+}
+
+.btn {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-color: #ffd480;
+}
+
+.buttonPanel {
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 6;
+}
+
+.actionButton {
+    height: 100%;
+    width: 20px;
+}

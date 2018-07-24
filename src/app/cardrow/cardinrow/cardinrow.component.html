@@ -1,0 +1,11 @@
+<div class="cardInRow">
+  <div class="cardContainer">
+     <card [card]="card.getCard()"></card>
+  </div>
+  <div class="actionCostContainer">
+    <div class="actionCost" *ngFor="let action of getCostToTakeCard()"></div>
+  </div>
+  <div class="draftButtonContainer">
+    <button class="btn" (click)="draftCard()">+</button>
+  </div>
+</div>

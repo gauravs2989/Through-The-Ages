@@ -1,0 +1,7 @@
+<div class="stack">
+    <div *ngFor="let card of stack" class="cardInStack" [ngClass]="'level' + card.level">
+        <unit-card [card]="card"
+        (unitBuilt)="onUnitBuilt($event)"
+        (unitDestroyed)="onUnitDestroyed($event)"></unit-card>
+    </div>
+</div>

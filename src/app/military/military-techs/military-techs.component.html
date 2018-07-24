@@ -1,0 +1,7 @@
+<div class="military">
+    <card-stack *ngFor="let stack of stacks" 
+    [stack]="stack" 
+    (unitBuilt)="onUnitBuilt($event)"
+    (unitDestroyed)="onUnitDestroyed($event)"></card-stack>
+    <button (click)="discover()">Discover</button>
+</div>

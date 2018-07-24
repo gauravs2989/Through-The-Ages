@@ -1,0 +1,12 @@
+.exclusiveTactic {
+    width: 100%;
+    text-align: center;
+}
+
+.cardContainer {
+    border-radius: 5px;
+    height: 140px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+}

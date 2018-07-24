@@ -1,0 +1,44 @@
+.wonders {
+    padding: 5px;
+}
+
+.incompleteWonder {
+    text-align: center;
+    background: maroon;
+}
+
+.constructionContainer {
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-top: -30px;
+}
+
+.cardContainer {
+    height: 140px;
+    width: 100px;
+    border-radius: 2px;
+    position: relative;
+    margin: auto;
+}
+
+.stages {
+    padding: 2px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.token {
+    background: #99ceff;
+    box-shadow: 0 0 2px #66b3ff;
+    margin: 2px;
+    display: inline-block;
+}
+
+.buildButton {
+    text-align: center;
+}
+
+.btn {
+    padding: 2px 6px;
+    background: #b3b3ff;
+}

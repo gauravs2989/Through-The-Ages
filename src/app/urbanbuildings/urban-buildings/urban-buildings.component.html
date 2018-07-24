@@ -1,0 +1,7 @@
+<div class="urbanBuildings">
+  <labs [stack]="getLabStack()"></labs>
+  <temples [stack]="getTempleStack()"></temples>
+  <theaters [stack]="getTheaterStack()" *ngIf="getTheaterStack()"></theaters>
+  <libraries [stack]="getLibraryStack()" *ngIf="getLibraryStack()"></libraries>
+  <arenas [stack]="getArenaStack()" *ngIf="getArenaStack()"></arenas>
+</div>

@@ -1,0 +1,31 @@
+<div class="ratings">
+  <div class="track">
+    <span class="icon cultureIcon"></span>
+    <span class="score">{{ culture }}</span>
+    <span class="rating">( {{ cultureRating }} )</span>
+  </div>
+  <div class="track">
+      <span class="icon scienceIcon"></span>
+      <span class="score">{{ science }}</span>
+      <span class="rating">( {{ scienceRating }} )</span>
+  </div>
+  <div class="track">
+      <span class="icon strengthIcon"></span>
+      <span class="score">{{ strength }}</span>
+  </div>
+  <div class="track">
+    <span class="icon colonizationIcon"></span>
+    <span class="score">{{ colonization }}</span>
+  </div>
+  <div class="track">
+      <span class="icon foodIcon"></span>
+      <span class="score">{{ food }}</span>
+      <span class="rating">( {{ foodGrowth }} )</span>
+  </div>
+  <div class="track">
+      <span class="icon resourceIcon"></span>
+      <span class="score">{{ resources }}</span>
+      <span class="score militaryResource" *ngIf="militarySpecificResources">+{{ militarySpecificResources }}</span>
+      <span class="rating">( {{ resourceGrowth }} )</span>
+  </div>
+</div>

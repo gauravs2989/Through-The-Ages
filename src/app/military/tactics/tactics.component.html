@@ -1,0 +1,6 @@
+<div class="exclusiveTactic">
+  <div class="cardContainer" *ngIf="getExclusiveTactic()">
+    <card [card]="getExclusiveTactic()"></card>
+  </div>
+</div>
+<button (click)="playTactic()">Play tactic</button>

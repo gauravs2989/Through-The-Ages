@@ -1,0 +1,31 @@
+<div class="wonders">
+  <div class="incompleteWonder" *ngIf="getWonderUnderConstruction()">
+    <div class="constructionContainer">
+        <div class="cardContainer">
+            <card [card]="getWonderUnderConstruction()"></card>
+        </div>
+         <div class="stages">
+             <div class="token" 
+             *ngFor="let stage of stages; index as i"
+             [ngClass]="{'resource': i < getBuiltStages()}"></div>
+         </div>
+    </div>
+    <div class="buildButton"  *ngIf="canBuild()">
+        <button mat-button [matMenuTriggerFor]="menu" class="btn">B</button>
+        <mat-menu #menu="matMenu" [overlapTrigger]="false">
+              <button mat-menu-item 
+              (click)="buildStage(option)" 
+              *ngFor="let option of getBuildOptions()">{{ option | WonderConstructionMessage }}
+              </button>
+        </mat-menu>
+    </div>
+  </div>
+  <ng-template wonderHost></ng-template>
+  <wonder-gallery *ngIf="areAnyWondersCompleted()" 
+  [wonderToDisplay]="getMostRecentWonder()"
+  [displayIndex]="getDisplayIndex()"></wonder-gallery>
+</div>
+<div class="buttons">
+    <button (click)="startConstruction()">Start</button>
+    <button (click)="completeWonder()">Finish</button>
+</div>

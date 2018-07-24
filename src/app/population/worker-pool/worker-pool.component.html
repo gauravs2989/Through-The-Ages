@@ -1,0 +1,14 @@
+<div class="workerPool">
+  <div class="tokenContainer">
+    <div class="token emptySlot" *ngIf="isEmpty()"></div>
+    <div class="token"
+    *ngFor="let token of getTokens();index as i" [ngClass]="{ 
+      'discontent': i < getDiscontentWorkers(),
+      'population': i >= getDiscontentWorkers()
+    }"
+    [title]="description"></div>
+  </div>
+  <div>
+    <button class="btn btn-primary" (click)="add()" *ngIf="canIncreasePopulation()">+</button>
+  </div>
+</div>

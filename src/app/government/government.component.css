@@ -1,0 +1,56 @@
+.government {
+    padding: 5px;
+}
+
+.cardContainer {
+    height: 140px;
+    width: 100px;
+    border-radius: 2px;
+    position: relative;
+    margin: auto;
+}
+
+.civilActionsContainer {
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+}
+
+.civilActions {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.optionalCivilActions {
+    display: inline-block;
+}
+
+.token {
+    float: left;
+    margin: 0 2px 0 2px;
+}
+
+.optionalCivilActions .token {
+    display: inline-block;
+    float: none;
+}
+
+.civilAction {
+    background: #e6e6e6;
+    box-shadow: 0 0 2px #999999;
+}
+
+.militaryActionsContainer {
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+}
+
+.militaryActions {
+    display: inline-block;
+}
+
+.militaryAction {
+    background: #b30000;
+    box-shadow: 0 0 2px #800000;
+}

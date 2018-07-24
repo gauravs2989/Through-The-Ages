@@ -1,0 +1,20 @@
+<div class="governmentIconContainer">
+    <div class="cardContainer">
+        <card [card]="card"></card>
+    </div>
+</div>
+<div class="civilActionsContainer">
+    <div class="civilActions">
+        <div class="token civilAction" *ngFor="let ca of civilActionTokens"></div>
+    </div>
+    <div class="optionalCivilActions" *ngIf="hasOptionalCivilActions()">
+        <span>(</span>
+        <div class="token civilAction"></div>
+        <span>)</span>
+    </div>
+</div>
+<div class="militaryActionsContainer">
+    <div class="militaryActions">
+        <div class="token militaryAction" *ngFor="let ma of militaryActionTokens"></div>
+    </div>
+</div>
