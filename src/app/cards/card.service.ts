@@ -119,7 +119,7 @@ export class CardService {
   };
 
   constructor() {
-    console.log("Constructing card service");
+    
   }
 
   get(cardName) {
