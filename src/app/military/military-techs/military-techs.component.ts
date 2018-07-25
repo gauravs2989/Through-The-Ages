@@ -30,12 +30,6 @@ export class MilitaryTechsComponent implements OnInit {
     this.discoveredTechsService.discover(initialCard);
     initialCard.build();
     this.onUnitBuilt(initialCard);
-    // initialCard.build();
-    // this.onUnitBuilt(initialCard);
-    // initialCard.build();
-    // this.onUnitBuilt(initialCard);
-    // initialCard.build();
-    // this.onUnitBuilt(initialCard);
   }
 
   onUnitBuilt(card) {
