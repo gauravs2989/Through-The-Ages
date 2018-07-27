@@ -1,3 +1,4 @@
+import { CardInRow } from './cardinrow/cardinrow';
 import { CardRowService } from './../common/services/cardrow.service';
 import { CardService } from './../cards/card.service';
 import { Component, OnInit } from '@angular/core';
@@ -20,5 +21,10 @@ export class CardRowComponent implements OnInit {
 
   private fillRow() {
     this.cardRowService.fillRow();
+  }
+
+  private handleCardDrafted(card: CardInRow) {
+    console.log("Drafted card: " + card.getPositionOnRow());
+    this.cardRowService.removeCardFromRow(card);
   }
 }

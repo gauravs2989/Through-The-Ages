@@ -1,8 +1,8 @@
 export class CardInRow {
 
     actionCost: number;
-
-    constructor(private card) {
+    
+    constructor(private card, private positionOnRow) {
         this.actionCost = 0;
     }
 
@@ -16,5 +16,9 @@ export class CardInRow {
 
     setActionCost(actionCost) {
         this.actionCost = actionCost;
+    }
+
+    getPositionOnRow() {
+        return this.positionOnRow;
     }
 }

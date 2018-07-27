@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { WondersService } from '../../common/services/wonders.service';
 import { WonderCard } from '../../cards/WonderCard';
 
@@ -9,6 +9,8 @@ import { WonderCard } from '../../cards/WonderCard';
 })
 export class CardInRowComponent implements OnInit {
   @Input('card') card;
+  @Output('cardDrafted') cardDrafted = new EventEmitter();
+
   constructor(private wondersService: WondersService) { }
 
   ngOnInit() {
@@ -29,7 +31,7 @@ export class CardInRowComponent implements OnInit {
   }
 
   private draftCard() {
-    console.log("Drafting card: ", this.card.getCard().getName());
+    this.cardDrafted.emit(this.card);
   }
 
   private isWonder() {

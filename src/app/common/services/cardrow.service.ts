@@ -20,7 +20,7 @@ export class CardRowService {
     this.cardsOnRow = [];
     let cards = this.getCardsToFillRow();
     cards.forEach((card, index) => {
-      let cardInRow = new CardInRow(this.cardService.get(card));
+      let cardInRow = new CardInRow(this.cardService.get(card), index);
       let actionCost = this.getActionCostForCard(card, index);
       
       cardInRow.setActionCost(actionCost);
@@ -32,6 +32,11 @@ export class CardRowService {
 
   public getCardsOnRow() {
     return this.cardsOnRow;
+  }
+
+  public removeCardFromRow(card: CardInRow) {
+    // this.cardsOnRow.splice(card.getPositionOnRow(), 1);
+    
   }
 
   private getActionCostForCard(card, index) {
@@ -46,13 +51,13 @@ export class CardRowService {
   // should return some mocked out version
   private getCardsToFillRow() {
     return [
-      "frugalitya",
+      "richlanda",
       "moses",
       "homer",
       "engineeringgeniusa",
-      "patriotisma",
-      "aristotle",
       "pyramids",
+      "aristotle",
+      "frugalitya",
       "libraryofalexandria",
       "urbangrowtha",
       "colossus",
