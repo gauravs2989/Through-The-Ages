@@ -1,11 +1,11 @@
 <div class="cardInRow">
   <div class="cardContainer">
-     <card [card]="card.getCard()"></card>
+     <card [card]="card.getCard()" *ngIf="!isDrafted()"></card>
   </div>
   <div class="actionCostContainer">
     <div class="actionCost" *ngFor="let action of getCostToTakeCard()"></div>
   </div>
   <div class="draftButtonContainer">
-    <button class="btn" (click)="draftCard()">+</button>
+    <button class="btn" (click)="draftCard()"  *ngIf="!isDrafted()">+</button>
   </div>
 </div>

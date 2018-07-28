@@ -34,6 +34,10 @@ export class CardInRowComponent implements OnInit {
     this.cardDrafted.emit(this.card);
   }
 
+  private isDrafted() {
+    return this.card.isDrafted();
+  }
+
   private isWonder() {
     return this.card.getCard() instanceof WonderCard;
   }

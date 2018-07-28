@@ -36,7 +36,7 @@ export class CardRowService {
 
   public removeCardFromRow(card: CardInRow) {
     // this.cardsOnRow.splice(card.getPositionOnRow(), 1);
-    
+    card.setDrafted(true);
   }
 
   private getActionCostForCard(card, index) {

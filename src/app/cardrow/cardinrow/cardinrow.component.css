@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     display: inline-block;
+    vertical-align: top;
 }
 
 .cardContainer {
@@ -28,9 +29,9 @@
     margin: 0 -1px;
 }
 
-.cardInRowContainer .draftButtonContainer {
+.cardInRow .draftButtonContainer {
     height: 10%;
-    background: lightblue;
+    width: 100%;
 }
 
 .draftButtonContainer .btn {
