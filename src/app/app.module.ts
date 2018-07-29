@@ -12,6 +12,7 @@ import { BuildService } from './common/services/build.service';
 import { UpgradeService } from './common/services/upgrade.service';
 import { TransactionService } from './common/services/transaction.service';
 import { ResourceService } from './common/services/resource.service';
+import { CorruptionService } from './common/services/corruption.service';
 import { FoodService } from './common/services/food.service';
 import { BlueCubeService } from './common/services/blue-cube.service';
 import { DiscoveredTechsService } from './common/services/discovered-techs.service';
@@ -62,6 +63,7 @@ import { CardRowService } from './common/services/cardrow.service';
     ActionsService,
     FoodService,
     ResourceService,
+    CorruptionService,
     CultureService,
     StrengthService,
     ColonizationService,

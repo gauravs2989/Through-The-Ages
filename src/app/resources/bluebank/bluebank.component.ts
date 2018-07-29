@@ -1,6 +1,7 @@
 import { BlueBankSection } from './bluebanksection/bluebanksection';
 import { Component, OnInit } from '@angular/core';
 import { BlueCubeService } from '../../common/services/blue-cube.service';
+import { CorruptionService } from '../../common/services/corruption.service';
 
 @Component({
   selector: 'bluebank',
@@ -14,7 +15,7 @@ export class BlueBankComponent implements OnInit {
   private activeSection: BlueBankSection;
   private initialCapacity: number = 16;
 
-  constructor(private blueCubeService: BlueCubeService) { 
+  constructor(private blueCubeService: BlueCubeService, private corruptionService: CorruptionService) { 
     this.sections.push(new BlueBankSection(5, -6));
     this.sections.push(new BlueBankSection(5, -4));
     this.sections.push(new BlueBankSection(6, -2));
@@ -81,9 +82,5 @@ export class BlueBankComponent implements OnInit {
 
   private getLastSection() {
     return this.sections[this.sections.length - 1];
-  }
-
-  private produce() {
-    
   }
 }
