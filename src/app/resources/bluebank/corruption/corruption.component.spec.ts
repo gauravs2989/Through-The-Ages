@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlueBankComponent } from './bluebank.component';
+import { CorruptionComponent } from './corruption.component';
 
-describe('BlueBankComponent', () => {
-  let component: BlueBankComponent;
-  let fixture: ComponentFixture<BlueBankComponent>;
+describe('CorruptionComponent', () => {
+  let component: CorruptionComponent;
+  let fixture: ComponentFixture<CorruptionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlueBankComponent ]
+      declarations: [ CorruptionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BlueBankComponent);
+    fixture = TestBed.createComponent(CorruptionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

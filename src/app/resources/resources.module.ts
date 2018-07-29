@@ -2,6 +2,7 @@ import { BlueBankSectionComponent } from './bluebank/bluebanksection/bluebanksec
 import { BlueBankComponent } from './bluebank/bluebank.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
+import { CorruptionComponent } from './bluebank/corruption/corruption.component';
 
 @NgModule({
     imports: [
@@ -9,7 +10,8 @@ import { NgModule } from "@angular/core";
     ],
     declarations: [
         BlueBankComponent,
-        BlueBankSectionComponent
+        BlueBankSectionComponent,
+        CorruptionComponent
     ],
     exports: [
         BlueBankComponent

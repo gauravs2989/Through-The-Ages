@@ -6,7 +6,9 @@ import { CorruptionService } from '../../common/services/corruption.service';
 @Component({
   selector: 'bluebank',
   templateUrl: './bluebank.component.html',
-  styleUrls: ['./bluebank.component.css']
+  styleUrls: [
+    './bluebank.component.css'
+  ]
 })
 export class BlueBankComponent implements OnInit {
 

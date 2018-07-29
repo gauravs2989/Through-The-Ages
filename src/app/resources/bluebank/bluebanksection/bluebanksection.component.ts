@@ -6,6 +6,7 @@ import { BlueBankSection } from './bluebanksection';
   templateUrl: './bluebanksection.component.html',
   styleUrls: [
     './bluebanksection.component.css',
+    './../corruption/corruption.component.css',
     './../../../common/styles/tokens.css'
   ]
 })

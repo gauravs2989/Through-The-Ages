@@ -20,4 +20,8 @@ export class CorruptionService {
   setCorruptionFromEmptySection(section: BlueBankSection) {
     section ? this.setCorruption(section.getCorruption()) : this.setCorruption(0);
   }
+
+  hasCorruption() : boolean {
+    return this.corruption !== 0;
+  }
 }
