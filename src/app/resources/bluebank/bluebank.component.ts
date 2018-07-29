@@ -61,17 +61,17 @@ export class BlueBankComponent implements OnInit {
   }
 
   private remove() {
-    let isFirstSection = (this.sections.indexOf(this.activeSection) === 0);
-    
+    this.activeSection.remove();
+
     if(this.activeSection.isEmpty()) {
+      this.corruptionService.setCorruption(this.activeSection.getCorruption());
+      let isFirstSection = (this.sections.indexOf(this.activeSection) === 0);
       if(isFirstSection) {
         return;
       }
       this.sectionIndex--;
       this.activeSection = this.sections[this.sectionIndex];
     }
-
-    this.activeSection.remove();
   }
 
   private appendToLastSection() {
