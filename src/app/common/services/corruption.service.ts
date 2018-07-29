@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BlueBankSection } from '../../resources/bluebank/bluebanksection/bluebanksection';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,12 @@ export class CorruptionService {
     this.corruption = 0;
   }
 
-  setCorruption(corruption) {
+  private setCorruption(corruption) {
     this.corruption = corruption;
     console.log("Losing resources: " + -1 * this.corruption + " to corruption.");
+  }
+
+  setCorruptionFromEmptySection(section: BlueBankSection) {
+    section ? this.setCorruption(section.getCorruption()) : this.setCorruption(0);
   }
 }

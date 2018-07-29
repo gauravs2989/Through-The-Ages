@@ -24,10 +24,14 @@ export class BlueBankComponent implements OnInit {
 
     this.blueCubeService.blueCubeRemoved$.subscribe((cubesToRemove) => {
       this.removeCubes(cubesToRemove);
+      // once we have removed all cubes, update corruption
+      this.updateCorruption();
     });
 
     this.blueCubeService.blueCubeAdded$.subscribe((cubesToAdd)=> {
-      this.addCubes(cubesToAdd)
+      this.addCubes(cubesToAdd);
+      // once we have removed all cubes, update corruption
+      this.updateCorruption();
     });
   }
 
@@ -64,7 +68,6 @@ export class BlueBankComponent implements OnInit {
     this.activeSection.remove();
 
     if(this.activeSection.isEmpty()) {
-      this.corruptionService.setCorruption(this.activeSection.getCorruption());
       let isFirstSection = (this.sections.indexOf(this.activeSection) === 0);
       if(isFirstSection) {
         return;
@@ -82,5 +85,19 @@ export class BlueBankComponent implements OnInit {
 
   private getLastSection() {
     return this.sections[this.sections.length - 1];
+  }
+
+  private updateCorruption() {
+    let firstEmptySection = this.getFirstEmptySection();
+    this.corruptionService.setCorruptionFromEmptySection(firstEmptySection);
+  }
+
+  private getFirstEmptySection() : BlueBankSection {
+    for (let i = 0; i < this.sections.length; i++) {
+      if (this.sections[i].isEmpty()) {
+        return this.sections[i];
+      }
+    }
+    return null;
   }
 }
