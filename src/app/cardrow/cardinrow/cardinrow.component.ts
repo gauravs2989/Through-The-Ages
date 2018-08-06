@@ -38,6 +38,21 @@ export class CardInRowComponent implements OnInit {
     return this.card.isDrafted();
   }
 
+  private canDraft() : boolean {
+    // If this is already drafted, then cannot draft
+    if (this.isDrafted()) {
+      return false;
+    }
+
+    // If this is a wonder card and there is a wonder under construction, cannot draft.
+    if (this.isWonder() && this.wondersService.getWonderUnderConstruction() !== null) {
+      return false;
+    }
+
+    // Otherwise can draft
+    return true;
+  }
+
   private isWonder() {
     return this.card.getCard() instanceof WonderCard;
   }

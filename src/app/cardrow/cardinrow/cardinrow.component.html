@@ -6,6 +6,6 @@
     <div class="actionCost" *ngFor="let action of getCostToTakeCard()"></div>
   </div>
   <div class="draftButtonContainer">
-    <button class="btn" (click)="draftCard()"  *ngIf="!isDrafted()">+</button>
+    <button class="btn" (click)="draftCard()"  *ngIf="canDraft()">+</button>
   </div>
 </div>
