@@ -14,7 +14,6 @@ export class CorruptionService {
 
   private setCorruption(corruption) {
     this.corruption = corruption;
-    console.log("Losing resources: " + -1 * this.corruption + " to corruption.");
   }
 
   setCorruptionFromEmptySection(section: BlueBankSection) {
