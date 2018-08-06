@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NameUtils } from '../../common/utils/name-utils';
-import { YellowCard } from './../YellowCard';
+import { YellowCard } from '../YellowCard';
 
 @Component({
   selector: 'card',

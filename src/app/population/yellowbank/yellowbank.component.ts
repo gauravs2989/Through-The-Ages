@@ -1,5 +1,5 @@
-import { FoodService } from './../../common/services/food.service';
-import { YellowCubeService } from './../../common/services/yellow-cube.service';
+import { FoodService } from '../../common/services/food.service';
+import { YellowCubeService } from '../../common/services/yellow-cube.service';
 import { YellowBankSection } from './yellowbanksection/yellowbanksection';
 import { Component, OnInit } from '@angular/core';
 import { HappinessService } from '../../common/services/happiness.service';

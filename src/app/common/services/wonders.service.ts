@@ -1,5 +1,5 @@
 import { BlueCubeService } from './blue-cube.service';
-import { BuildOption } from './../../wonders/build-option';
+import { BuildOption } from '../../wonders/build-option';
 import { Injectable } from '@angular/core';
 import { ResourceService } from './resource.service';
 

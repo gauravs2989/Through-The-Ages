@@ -1,8 +1,8 @@
-import { ColonizationService } from './../common/services/colonization.service';
-import { ResourceService } from './../common/services/resource.service';
+import { ColonizationService } from '../common/services/colonization.service';
+import { ResourceService } from '../common/services/resource.service';
 import { Subject } from 'rxjs/Subject';
-import { FoodService } from './../common/services/food.service';
-import { CultureService } from './../common/services/culture.service';
+import { FoodService } from '../common/services/food.service';
+import { CultureService } from '../common/services/culture.service';
 import { ScienceService } from '../common/services/science.service';
 import { StrengthService } from '../common/services/strength.service';
 

@@ -1,6 +1,6 @@
-import { ScienceService } from './../../common/services/science.service';
-import { DiscoveredTechsService } from './../../common/services/discovered-techs.service';
-import { CardService } from './../../cards/card.service';
+import { ScienceService } from '../../common/services/science.service';
+import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
+import { CardService } from '../../cards/card.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

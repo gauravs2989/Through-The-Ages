@@ -1,5 +1,5 @@
-import { NameUtils } from './../../common/utils/name-utils';
-import { StrengthService } from './../../common/services/strength.service';
+import { NameUtils } from '../../common/utils/name-utils';
+import { StrengthService } from '../../common/services/strength.service';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
 import { ISubscription } from 'rxjs/Subscription';

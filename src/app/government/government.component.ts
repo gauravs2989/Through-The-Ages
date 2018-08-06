@@ -1,11 +1,11 @@
-import { ActionsService } from './../common/services/actions.service';
+import { ActionsService } from '../common/services/actions.service';
 import { Government } from './government';
 import { GovernmentService } from './government.service';
 import { GovernmentHostDirective } from './government-host.directive';
-import { GovernmentCard } from './../cards/GovernmentCard';
-import { DiscoveredTechsService } from './../common/services/discovered-techs.service';
+import { GovernmentCard } from '../cards/GovernmentCard';
+import { DiscoveredTechsService } from '../common/services/discovered-techs.service';
 import { Component, OnInit, ViewChild, ComponentFactoryResolver, Input } from '@angular/core';
-import { CardService } from './../cards/card.service';
+import { CardService } from '../cards/card.service';
 
 
 @Component({

@@ -1,4 +1,4 @@
-import { CardsModule } from './../cards/cards.module';
+import { CardsModule } from '../cards/cards.module';
 import { FundamentalismComponent } from './components/fundamentalism.component';
 import { BaseGovernmentComponent } from './components/basegovernment.component';
 import { TheocracyComponent } from './components/theocracy.component';

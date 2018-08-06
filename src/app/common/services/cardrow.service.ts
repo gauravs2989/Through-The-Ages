@@ -1,4 +1,4 @@
-import { CardInRow } from './../../cardrow/cardinrow/cardinrow';
+import { CardInRow } from '../../cardrow/cardinrow/cardinrow';
 import { Injectable } from '@angular/core';
 import { CardService } from '../../cards/card.service';
 

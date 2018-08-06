@@ -1,8 +1,9 @@
 import { LeaderHostDirective } from './leader-host.directive';
-import { LeadersComponentService } from './leaders.service';
-import { CardService } from './../cards/card.service';
+import { LeadersComponentService } from './leaders-component.service';
+import { CardService } from '../cards/card.service';
 import { Component, OnInit, ViewChild, ComponentFactoryResolver } from '@angular/core';
 import { Leader } from './leader';
+import { LeaderService } from '../common/services/leader.service';
 
 @Component({
   selector: 'leader',
@@ -19,8 +20,12 @@ export class LeaderComponent implements OnInit {
   private static ELECT_LABEL = "Elect";
 
   @ViewChild(LeaderHostDirective) leaderHost: LeaderHostDirective;
-  constructor(private cardService: CardService, private leadersComponentService: LeadersComponentService, 
-    private componentFactoryResolver: ComponentFactoryResolver) {
+  constructor(
+    private cardService: CardService, 
+    private leadersComponentService: LeadersComponentService, 
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private leaderService: LeaderService
+    ) {
   }
 
   ngOnInit() {

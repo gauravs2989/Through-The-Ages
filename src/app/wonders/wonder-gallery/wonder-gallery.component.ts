@@ -1,4 +1,4 @@
-import { NameUtils } from './../../common/utils/name-utils';
+import { NameUtils } from '../../common/utils/name-utils';
 import { Component, OnInit, Input } from '@angular/core';
 import { WondersService } from '../../common/services/wonders.service';
 

@@ -50,7 +50,9 @@ export class CardInRowComponent implements OnInit {
       return false;
     }
 
-    if (this.isLeader())
+    if (this.isLeader()) {
+      
+    }
 
     // Otherwise can draft
     return true;

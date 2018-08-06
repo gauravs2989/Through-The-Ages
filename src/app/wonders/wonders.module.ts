@@ -1,4 +1,4 @@
-import { CardsModule } from './../cards/cards.module';
+import { CardsModule } from '../cards/cards.module';
 import { MatMenuModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HangingGardensComponent } from './components/hanginggardens.component';

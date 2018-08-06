@@ -1,4 +1,4 @@
-import { CardTypes } from './../../cards/card-types';
+import { CardTypes } from '../../cards/card-types';
 import { Subject } from 'rxjs/Subject';
 import { RatingService } from './rating.service';
 import { Injectable } from '@angular/core';

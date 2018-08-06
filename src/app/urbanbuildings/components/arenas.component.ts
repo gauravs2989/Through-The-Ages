@@ -1,5 +1,5 @@
-import { HappinessService } from './../../common/services/happiness.service';
-import { StrengthService } from './../../common/services/strength.service';
+import { HappinessService } from '../../common/services/happiness.service';
+import { StrengthService } from '../../common/services/strength.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

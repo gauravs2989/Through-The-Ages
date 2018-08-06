@@ -1,7 +1,7 @@
-import { ResourceService } from './../../common/services/resource.service';
-import { BuildService } from './../../common/services/build.service';
-import { UpgradeService } from './../../common/services/upgrade.service';
-import { CardTypes } from './../card-types';
+import { ResourceService } from '../../common/services/resource.service';
+import { BuildService } from '../../common/services/build.service';
+import { UpgradeService } from '../../common/services/upgrade.service';
+import { CardTypes } from '../card-types';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { ActionsService } from '../../common/services/actions.service';
 import { NameUtils } from '../../common/utils/name-utils';

@@ -1,4 +1,4 @@
-import { NameUtils } from './../../common/utils/name-utils';
+import { NameUtils } from '../../common/utils/name-utils';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { YellowCubeService } from '../../common/services/yellow-cube.service';
 

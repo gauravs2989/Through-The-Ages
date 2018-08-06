@@ -1,4 +1,4 @@
-import { DiscoveredTechsService } from './../../common/services/discovered-techs.service';
+import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
 import { Component } from '@angular/core';
 import { CardTypes } from '../../cards/card-types';
 

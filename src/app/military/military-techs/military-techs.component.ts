@@ -1,4 +1,4 @@
-import { DiscoveredTechsService } from './../../common/services/discovered-techs.service';
+import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
 import { Component, OnInit, Input} from '@angular/core';
 import { CardService } from '../../cards/card.service';
 import { CardStack } from '../../cards/CardStack';

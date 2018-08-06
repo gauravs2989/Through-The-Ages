@@ -1,6 +1,6 @@
-import { ScienceService } from './../../common/services/science.service';
-import { StrengthService } from './../../common/services/strength.service';
-import { ActionsService } from './../../common/services/actions.service';
+import { ScienceService } from '../../common/services/science.service';
+import { StrengthService } from '../../common/services/strength.service';
+import { ActionsService } from '../../common/services/actions.service';
 import { Component, Input, AfterViewInit, OnDestroy } from '@angular/core';
 import { BaseGovernmentComponent } from './basegovernment.component';
 @Component({
