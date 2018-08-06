@@ -14,7 +14,6 @@ export class LeaderService {
 
   setCurrentLeader(card: LeaderCard) {
     this.currentLeader = card;
-    console.log(this.currentLeader);
   }
 
   getCurrentLeader() : LeaderCard {
