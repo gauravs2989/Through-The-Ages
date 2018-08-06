@@ -1,5 +1,5 @@
 import { LeaderHostDirective } from './leader-host.directive';
-import { LeadersService } from './leaders.service';
+import { LeadersComponentService } from './leaders.service';
 import { CardService } from './../cards/card.service';
 import { Component, OnInit, ViewChild, ComponentFactoryResolver } from '@angular/core';
 import { Leader } from './leader';
@@ -13,14 +13,13 @@ import { Leader } from './leader';
   ]
 })
 export class LeaderComponent implements OnInit {
-  private card;
   private currentLeader = null;
   
   private static DESTROY_LABEL = "Destroy";
   private static ELECT_LABEL = "Elect";
 
   @ViewChild(LeaderHostDirective) leaderHost: LeaderHostDirective;
-  constructor(private cardService: CardService, private leadersService: LeadersService, 
+  constructor(private cardService: CardService, private leadersComponentService: LeadersComponentService, 
     private componentFactoryResolver: ComponentFactoryResolver) {
   }
 
@@ -55,7 +54,7 @@ export class LeaderComponent implements OnInit {
   private createLeaderComponent(leader) {
     let name = leader ? leader.name : null;
     
-    let componentToCreate = this.leadersService.getComponent(name);
+    let componentToCreate = this.leadersComponentService.getComponent(name);
     let componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentToCreate);
 
     let viewContainerRef = this.leaderHost.viewContainerRef;

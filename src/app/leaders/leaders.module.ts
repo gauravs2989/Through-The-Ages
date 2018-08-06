@@ -1,4 +1,4 @@
-import { CardsModule } from './../cards/cards.module';
+import { CardsModule } from '../cards/cards.module';
 import { AristotleComponent } from './components/aristotle.component';
 import { HammurabiComponent } from './components/hammurabi.components';
 import { JuliusCaesarComponent } from './components/julius.component';
@@ -6,7 +6,7 @@ import { MosesComponent } from './components/moses.component';
 import { NoLeaderComponent } from './components/no-leader.component';
 import { AlexanderTheGreatComponent } from './components/alexander.component';
 import { HomerComponent } from './components/homer.component';
-import { LeadersService } from './leaders.service';
+import { LeadersComponentService } from './leaders-component.service';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 import { LeaderComponent } from "./leader.component";
@@ -29,7 +29,7 @@ import { LeaderHostDirective } from './leader-host.directive';
         AristotleComponent
     ],
     providers: [
-        LeadersService
+        LeadersComponentService
     ],
     exports: [
         LeaderComponent

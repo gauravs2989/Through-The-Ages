@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { WondersService } from '../../common/services/wonders.service';
 import { WonderCard } from '../../cards/WonderCard';
+import { LeaderCard } from '../../cards/LeaderCard';
 
 @Component({
   selector: 'cardinrow',
@@ -34,7 +35,7 @@ export class CardInRowComponent implements OnInit {
     this.cardDrafted.emit(this.card);
   }
 
-  private isDrafted() {
+  private isDrafted() : boolean {
     return this.card.isDrafted();
   }
 
@@ -49,11 +50,17 @@ export class CardInRowComponent implements OnInit {
       return false;
     }
 
+    if (this.isLeader())
+
     // Otherwise can draft
     return true;
   }
 
-  private isWonder() {
+  private isWonder() : boolean {
     return this.card.getCard() instanceof WonderCard;
+  }
+
+  private isLeader() : boolean {
+    return this.card.getCard() instanceof LeaderCard;
   }
 }

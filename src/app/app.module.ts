@@ -16,6 +16,9 @@ import { CorruptionService } from './common/services/corruption.service';
 import { FoodService } from './common/services/food.service';
 import { BlueCubeService } from './common/services/blue-cube.service';
 import { DiscoveredTechsService } from './common/services/discovered-techs.service';
+import { CardService } from './cards/card.service';
+import { CardRowService } from './common/services/cardrow.service';
+import { LeaderService } from './common/services/leader.service';
 
 import { CardsModule } from './cards/cards.module';
 import { GovernmentModule } from './government/government.module';
@@ -33,9 +36,6 @@ import { LeadersModule } from './leaders/leaders.module';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-
-import { CardService } from './cards/card.service';
-import { CardRowService } from './common/services/cardrow.service';
 
 @NgModule({
   declarations: [
@@ -75,6 +75,7 @@ import { CardRowService } from './common/services/cardrow.service';
     UpgradeService,
     BuildService,
     WondersService,
+    LeaderService,
     DiscoveredTechsService,
     TacticsService
   ],

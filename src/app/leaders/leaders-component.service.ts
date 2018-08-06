@@ -8,7 +8,7 @@ import { HammurabiComponent } from './components/hammurabi.components';
 import { AristotleComponent } from './components/aristotle.component';
 
 @Injectable()
-export class LeadersService {
+export class LeadersComponentService {
 
     private components = {
         "Homer": HomerComponent,
