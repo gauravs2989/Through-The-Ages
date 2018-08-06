@@ -69,5 +69,6 @@ export class LeaderComponent implements OnInit {
     (<Leader>componentRef.instance).card = (leader ? leader : null);
 
     this.currentLeader = (leader ? componentRef : null);
+    this.leaderService.setCurrentLeader(this.currentLeader ? this.currentLeader.instance.card : null);
   }
 }

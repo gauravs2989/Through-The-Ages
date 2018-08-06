@@ -51,7 +51,8 @@ export class HammurabiComponent implements AfterViewInit, OnDestroy {
 
         cardsOnRow.forEach((cardOnRow) => {
             // Taking a leader from the card row costs you one civil action less.
-            if (cardOnRow.getCard() instanceof LeaderCard) {
+            let card = cardOnRow.getCard();
+            if (card instanceof LeaderCard && card.getLevel() !== this.card.getLevel()) {
                 let currentCost = cardOnRow.getActionsToDraft();
                 cardOnRow.setActionCost(currentCost - direction * discount);
             }
