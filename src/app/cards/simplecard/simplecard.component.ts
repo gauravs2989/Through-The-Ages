@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NameUtils } from '../../common/utils/name-utils';
-import { YellowCard } from '../YellowCard';
+import { NameUtils } from 'common/utils/name-utils';
+import { YellowCard } from 'cards/YellowCard';
 
 @Component({
   selector: 'card',
   templateUrl: './simplecard.component.html',
   styleUrls: [
     './simplecard.component.css',
-    './../../common/styles/cards.css',
+    '../../common/styles/cards.css',
   ]
 })
 export class SimplecardComponent implements OnInit {
