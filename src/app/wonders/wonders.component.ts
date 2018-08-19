@@ -1,7 +1,7 @@
 import { WonderHostDirective } from './wonder-host.directive';
-import { NameUtils } from '../common/utils/name-utils';
-import { WondersService } from '../common/services/wonders.service';
-import { CardService } from '../cards/card.service';
+import { NameUtils } from 'common/utils/name-utils';
+import { WondersService } from 'common/services/wonders.service';
+import { CardService } from 'cards/card.service';
 import { Component, OnInit, ComponentFactoryResolver, ViewChild, ViewContainerRef } from '@angular/core';
 import { WondersComponentService } from './wonders.components.service';
 import { Wonder } from './wonder';

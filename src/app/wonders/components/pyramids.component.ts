@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { ActionsService } from '../../common/services/actions.service';
+import { ActionsService } from 'common/services/actions.service';
 @Component({
     template: '',
     styleUrls: []

@@ -1,5 +1,5 @@
-import { ColonizationService } from '../../common/services/colonization.service';
-import { StrengthService } from '../../common/services/strength.service';
+import { ColonizationService } from 'common/services/colonization.service';
+import { StrengthService } from 'common/services/strength.service';
 import { Component, AfterViewInit } from '@angular/core';
 @Component({
     template: '',

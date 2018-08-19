@@ -1,5 +1,5 @@
-import { ScienceService } from '../../common/services/science.service';
-import { CultureService } from '../../common/services/culture.service';
+import { ScienceService } from 'common/services/science.service';
+import { CultureService } from 'common/services/culture.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

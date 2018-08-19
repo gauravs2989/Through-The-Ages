@@ -1,7 +1,7 @@
-import { HappinessService } from '../../common/services/happiness.service';
-import { CultureService } from '../../common/services/culture.service';
-import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
-import { CardService } from '../../cards/card.service';
+import { HappinessService } from 'common/services/happiness.service';
+import { CultureService } from 'common/services/culture.service';
+import { DiscoveredTechsService } from 'common/services/discovered-techs.service';
+import { CardService } from 'cards/card.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

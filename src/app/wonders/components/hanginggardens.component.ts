@@ -1,5 +1,5 @@
-import { CultureService } from '../../common/services/culture.service';
-import { HappinessService } from '../../common/services/happiness.service';
+import { CultureService } from 'common/services/culture.service';
+import { HappinessService } from 'common/services/happiness.service';
 import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
