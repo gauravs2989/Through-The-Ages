@@ -1,6 +1,5 @@
-import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
+import { DiscoveredTechsService } from 'common/services/discovered-techs.service';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { CardStack } from '../CardStack';
 
 @Component({
   selector: 'card-stack',
