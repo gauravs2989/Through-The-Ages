@@ -1,6 +1,5 @@
 import { YellowBankSection } from './yellowbanksection';
 import { Component, OnInit, Input } from '@angular/core';
-import { Token } from '../../../common/Token';
 
 @Component({
   selector: 'yellowbanksection',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CorruptionService } from '../../../common/services/corruption.service';
+import { CorruptionService } from 'common/services/corruption.service';
 
 @Component({
   selector: 'corruption',

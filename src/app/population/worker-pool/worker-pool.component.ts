@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Token } from '../../common/Token';
-import { YellowCubeService } from '../../common/services/yellow-cube.service';
+import { YellowCubeService } from 'common/services/yellow-cube.service';
 
 @Component({
   selector: 'worker-pool',

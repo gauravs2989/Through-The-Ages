@@ -1,7 +1,7 @@
 import { BlueBankSection } from './bluebanksection/bluebanksection';
 import { Component, OnInit } from '@angular/core';
-import { BlueCubeService } from '../../common/services/blue-cube.service';
-import { CorruptionService } from '../../common/services/corruption.service';
+import { BlueCubeService } from 'common/services/blue-cube.service';
+import { CorruptionService } from 'common/services/corruption.service';
 
 @Component({
   selector: 'bluebank',

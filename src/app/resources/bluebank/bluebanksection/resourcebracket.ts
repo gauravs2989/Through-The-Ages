@@ -1,4 +1,4 @@
-import { Token } from "../../../common/Token";
+import { Token } from "common/Token";
 
 export class ResourceBracket {
     private tokens: Token[] = [];
