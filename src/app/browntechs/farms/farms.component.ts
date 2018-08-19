@@ -1,10 +1,8 @@
-import { BuildService } from '../../common/services/build.service';
-import { CardTypes } from '../../cards/card-types';
-import { TransactionService } from '../../common/services/transaction.service';
-import { BlueCubeService } from '../../common/services/blue-cube.service';
-import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
-import { CardService } from '../../cards/card.service';
-import { FoodService } from '../../common/services/food.service';
+import { BlueCubeService } from 'common/services/blue-cube.service';
+import { DiscoveredTechsService } from 'common/services/discovered-techs.service';
+import { FoodService } from 'common/services/food.service';
+import { TransactionService } from 'common/services/transaction.service';
+import { CardService } from 'cards/card.service';
 import { Component, Input } from '@angular/core';
 
 @Component({

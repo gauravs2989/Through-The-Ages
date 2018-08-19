@@ -3,7 +3,7 @@ import { CardRowComponent } from './cardrow.component';
 
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
-import { CardsModule } from '../cards/cards.module';
+import { CardsModule } from 'cards/cards.module';
 
 @NgModule({
     imports: [

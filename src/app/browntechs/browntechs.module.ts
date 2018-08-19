@@ -1,8 +1,8 @@
-import { BrownTechsComponent } from './brown-techs/brown-techs.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 
-import { CardsModule } from '../cards/cards.module';
+import { CardsModule } from 'cards/cards.module';
+import { BrownTechsComponent } from './brown-techs/brown-techs.component';
 import { FarmsComponent } from './farms/farms.component';
 import { MinesComponent } from './mines/mines.component';
 

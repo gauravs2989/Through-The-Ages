@@ -1,7 +1,7 @@
-import { BlueCubeService } from '../../common/services/blue-cube.service';
-import { ResourceService } from '../../common/services/resource.service';
-import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
-import { CardService } from '../../cards/card.service';
+import { BlueCubeService } from 'common/services/blue-cube.service';
+import { ResourceService } from 'common/services/resource.service';
+import { DiscoveredTechsService } from 'common/services/discovered-techs.service';
+import { CardService } from 'cards/card.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

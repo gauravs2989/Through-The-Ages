@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { WondersService } from '../../common/services/wonders.service';
-import { LeaderService } from '../../common/services/leader.service';
-import { WonderCard } from '../../cards/WonderCard';
-import { LeaderCard } from '../../cards/LeaderCard';
+import { WondersService } from 'common/services/wonders.service';
+import { LeaderService } from 'common/services/leader.service';
+import { WonderCard } from 'cards/WonderCard';
+import { LeaderCard } from 'cards/LeaderCard';
 
 @Component({
   selector: 'cardinrow',

@@ -1,6 +1,5 @@
 import { CardInRow } from './cardinrow/cardinrow';
-import { CardRowService } from '../common/services/cardrow.service';
-import { CardService } from '../cards/card.service';
+import { CardRowService } from 'common/services/cardrow.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
