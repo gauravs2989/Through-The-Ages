@@ -1,7 +1,6 @@
 import { CardsModule } from './cards.module';
 import { YellowCard } from './YellowCard';
 import { Injectable } from '@angular/core';
-import { BaseCard } from './BaseCard';
 import { GovernmentCard } from './GovernmentCard';
 import { LeaderCard } from './LeaderCard';
 import { UnitCard } from './UnitCard';

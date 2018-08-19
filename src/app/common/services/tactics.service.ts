@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { StrengthService } from './strength.service';
-import { TacticsCard } from '../../cards/TacticsCard';
-import { CardTypes } from '../../cards/card-types';
+import { TacticsCard } from 'cards/TacticsCard';
+import { CardTypes } from 'cards/card-types';
 
 @Injectable()
 export class TacticsService {

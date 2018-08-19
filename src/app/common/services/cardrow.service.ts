@@ -1,6 +1,6 @@
-import { CardInRow } from '../../cardrow/cardinrow/cardinrow';
+import { CardInRow } from 'cardrow/cardinrow/cardinrow';
+import { CardService } from 'cards/card.service';
 import { Injectable } from '@angular/core';
-import { CardService } from '../../cards/card.service';
 
 import { Subject } from 'rxjs/Subject';
 

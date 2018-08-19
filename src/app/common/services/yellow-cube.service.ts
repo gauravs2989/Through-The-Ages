@@ -1,4 +1,4 @@
-import { Token } from '../Token';
+import { Token } from 'common/Token';
 import { FoodService } from './food.service';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';

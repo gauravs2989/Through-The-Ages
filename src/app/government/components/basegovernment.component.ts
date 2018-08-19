@@ -1,7 +1,6 @@
-import { NameUtils } from '../../common/utils/name-utils';
-import { GovernmentCard } from '../../cards/GovernmentCard';
-import { Token } from '../../common/Token';
-import { ActionsService } from '../../common/services/actions.service';
+import { NameUtils } from 'common/utils/name-utils';
+import { Token } from 'common/Token';
+import { ActionsService } from 'common/services/actions.service';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 @Component({
     templateUrl: './../../common/templates/government.template.html',

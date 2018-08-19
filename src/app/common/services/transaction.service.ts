@@ -1,4 +1,4 @@
-import { CardTypes } from '../../cards/card-types';
+import { CardTypes } from 'cards/card-types';
 import { DiscoveredTechsService } from './discovered-techs.service';
 import { BlueCubeService } from './blue-cube.service';
 import { Injectable } from '@angular/core';

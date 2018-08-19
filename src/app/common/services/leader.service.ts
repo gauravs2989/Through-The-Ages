@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LeaderCard } from '../../cards/LeaderCard';
+import { LeaderCard } from 'cards/LeaderCard';
 
 @Injectable({
   providedIn: 'root'

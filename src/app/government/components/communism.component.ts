@@ -1,5 +1,5 @@
-import { HappinessService } from '../../common/services/happiness.service';
-import { ActionsService } from '../../common/services/actions.service';
+import { HappinessService } from 'common/services/happiness.service';
+import { ActionsService } from 'common/services/actions.service';
 import { Component, Input, AfterViewInit, OnDestroy } from '@angular/core';
 import { BaseGovernmentComponent } from './basegovernment.component';
 @Component({

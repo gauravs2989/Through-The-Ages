@@ -1,8 +1,7 @@
 import { TransactionService } from './transaction.service';
-import { CardTypes } from '../../cards/card-types';
+import { CardTypes } from 'cards/card-types';
 import { RatingService } from './rating.service';
 import { Injectable } from '@angular/core';
-import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 
 @Injectable()
 export class FoodService extends RatingService {

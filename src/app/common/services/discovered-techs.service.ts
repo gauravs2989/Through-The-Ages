@@ -1,6 +1,6 @@
 import { Subject } from 'rxjs/Subject';
 import { Injectable } from '@angular/core';
-import { CardTypes } from '../../cards/card-types';
+import { CardTypes } from 'cards/card-types';
 
 @Injectable()
 export class DiscoveredTechsService {

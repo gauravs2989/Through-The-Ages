@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { Token } from '../common/Token';
+import { Token } from 'common/Token';
 import { TechnologyCard } from './TechnologyCard';
 
 export class UnitCard extends TechnologyCard {

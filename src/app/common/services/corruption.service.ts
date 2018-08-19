@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BlueBankSection } from '../../resources/bluebank/bluebanksection/bluebanksection';
+import { BlueBankSection } from 'resources/bluebank/bluebanksection/bluebanksection';
 
 @Injectable({
   providedIn: 'root'

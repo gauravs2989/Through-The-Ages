@@ -1,5 +1,5 @@
-import { CultureService } from '../../common/services/culture.service';
-import { ActionsService } from '../../common/services/actions.service';
+import { CultureService } from 'common/services/culture.service';
+import { ActionsService } from 'common/services/actions.service';
 import { Component, Input, AfterViewInit, OnDestroy } from '@angular/core';
 import { BaseGovernmentComponent } from './basegovernment.component';
 @Component({
