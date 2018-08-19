@@ -1,8 +1,7 @@
-import { DiscoveredTechsService } from '../../common/services/discovered-techs.service';
+import { DiscoveredTechsService } from 'common/services/discovered-techs.service';
 import { Component, OnInit, Input} from '@angular/core';
-import { CardService } from '../../cards/card.service';
-import { CardStack } from '../../cards/CardStack';
-import { StrengthService } from '../../common/services/strength.service';
+import { CardService } from 'cards/card.service';
+import { StrengthService } from 'common/services/strength.service';
 
 @Component({
   selector: 'military-techs',

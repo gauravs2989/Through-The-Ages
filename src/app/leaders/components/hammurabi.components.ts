@@ -1,8 +1,8 @@
-import { NameUtils } from '../../common/utils/name-utils';
+import { NameUtils } from 'common/utils/name-utils';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
-import { ActionsService } from '../../common/services/actions.service';
-import { CardRowService } from '../../common/services/cardrow.service';
-import { LeaderCard } from '../../cards/LeaderCard';
+import { ActionsService } from 'common/services/actions.service';
+import { CardRowService } from 'common/services/cardrow.service';
+import { LeaderCard } from 'cards/LeaderCard';
 import { ISubscription } from 'rxjs/Subscription';
 
 @Component({

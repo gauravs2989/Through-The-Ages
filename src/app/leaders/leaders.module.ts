@@ -1,4 +1,4 @@
-import { CardsModule } from '../cards/cards.module';
+import { CardsModule } from 'cards/cards.module';
 import { AristotleComponent } from './components/aristotle.component';
 import { HammurabiComponent } from './components/hammurabi.components';
 import { JuliusCaesarComponent } from './components/julius.component';

@@ -1,9 +1,9 @@
 import { LeaderHostDirective } from './leader-host.directive';
 import { LeadersComponentService } from './leaders-component.service';
-import { CardService } from '../cards/card.service';
+import { CardService } from 'cards/card.service';
 import { Component, OnInit, ViewChild, ComponentFactoryResolver } from '@angular/core';
 import { Leader } from './leader';
-import { LeaderService } from '../common/services/leader.service';
+import { LeaderService } from 'common/services/leader.service';
 
 @Component({
   selector: 'leader',

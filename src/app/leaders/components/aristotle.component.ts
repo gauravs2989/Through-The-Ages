@@ -1,5 +1,5 @@
-import { NameUtils } from '../../common/utils/name-utils';
-import { ScienceService } from '../../common/services/science.service';
+import { NameUtils } from 'common/utils/name-utils';
+import { ScienceService } from 'common/services/science.service';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 @Component({
     templateUrl: '../../common/templates/leader.template.html',

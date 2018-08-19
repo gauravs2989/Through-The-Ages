@@ -1,7 +1,7 @@
-import { ResourceService } from '../../common/services/resource.service';
+import { ResourceService } from 'common/services/resource.service';
 import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
-import { HappinessService } from '../../common/services/happiness.service';
-import { NameUtils } from '../../common/utils/name-utils';
+import { HappinessService } from 'common/services/happiness.service';
+import { NameUtils } from 'common/utils/name-utils';
 import { Component, AfterViewInit } from "@angular/core";
 
 

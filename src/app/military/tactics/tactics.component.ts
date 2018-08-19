@@ -1,7 +1,7 @@
-import { NameUtils } from '../../common/utils/name-utils';
-import { TacticsService } from '../../common/services/tactics.service';
+import { NameUtils } from 'common/utils/name-utils';
+import { TacticsService } from 'common/services/tactics.service';
 import { Component, OnInit } from '@angular/core';
-import { CardService } from '../../cards/card.service';
+import { CardService } from 'cards/card.service';
 
 @Component({
   selector: 'tactics',

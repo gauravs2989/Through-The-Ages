@@ -1,6 +1,6 @@
-import { NameUtils } from '../../common/utils/name-utils';
-import { StrengthService } from '../../common/services/strength.service';
-import { ActionsService } from '../../common/services/actions.service';
+import { NameUtils } from 'common/utils/name-utils';
+import { StrengthService } from 'common/services/strength.service';
+import { ActionsService } from 'common/services/actions.service';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 @Component({
     templateUrl: '../../common/templates/leader.template.html',
